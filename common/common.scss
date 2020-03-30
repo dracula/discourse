@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap');
+
+a {
+  color: $quaternary;
+}
+
+html {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+tbody {
+  border-top: 3px solid #44475a;
+}
+
+tr {
+  border-bottom: 1px solid #44475a;
+}
+
+.alert.alert-info {
+  background-color: $secondary-high#{50};
+  border: 1px solid $highlight-high#{50};
+  a {
+    color: $quaternary;
+    font-family: 'Source Code Pro';
+    font-size: 13px;
+    &:hover {
+      color: $quaternary#{90};
+    }
+  }
+}
+
+.topic-list td {
+  color: $primary;
+}
+
+#main-outlet {
+  padding-top: 8em;
+}
+
+// Header
+.d-header {
+  background-color: $secondary;
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,.15);
+  height: 75px;
+}
+
+// Menu Panel Links
+.panel-body-contents {
+  a {
+    color: $primary;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    &:hover {
+      color: $tertiary;
+      text-decoration-color: $tertiary;
+    }
+  }
+  .badge-wrapper.bullet span.badge-category {
+    color: $primary;
+    font-weight: 400;
+  }
+}
+
+// User menu panel links + icons
+.user-menu {
+  .menu-links-header {
+    .menu-links-row {
+      border-color: #44475a;
+      li a.active {
+        border-color: #44475a;
+      }
+    }
+    a {
+      color: $primary;
+      text-decoration: underline;
+      text-decoration-color: transparent;
+      &:hover {
+      color: $tertiary;
+      text-decoration-color: $tertiary;
+      background-color: transparent;
+      }
+    }
+    .user .d-icon, .glyphs .d-icon {
+      color: $primary;
+    }
+  }
+}
+
+.user-menu .quick-access-panel li {
+  .d-icon {
+    color: $primary;
+  };
+  background-color: $tertiary#{50};
+  &:not(.read):hover {
+    background-color: $tertiary#{50};
+  }
+  &:hover {
+    background-color: transparent;
+  }
+}
+
+// menu panel hover
+.menu-panel li a.widget-link:hover,
+.menu-panel li a.widget-link:focus,
+.menu-panel li.heading a.widget-link:hover,
+.menu-panel li.heading a.widget-link:focus {
+  background-color: transparent;
+}
+
+// select kit highlight
+.select-kit .select-kit-row.is-highlighted {
+  background-color: $highlight-high#{50};
+}
+
+// notifications
+.d-header-icons .unread-notifications {
+  background-color: $success;
+}
+
+// Last visit line + text
+.topic-list .topic-list-item-separator td {
+  border-bottom: 1px solid $highlight-high#{90};
+  span {
+    color: $highlight-high;
+  }
+}
+
+// visited topics
+.topic-list-item.visited a.title:not(.badge-notification),
+.latest-topic-list-item.visited a.title:not(.badge-notification),
+.category-topic-link.visited a.title:not(.badge-notification) {
+  color: $primary-high;
+  font-weight: 400;
+}
+
+// Navigation Pills
+.nav-pills > li > a {
+  color: $primary;
+  font-family: 'Source Sans Pro' sans-serif;
+  font-weight: 300;
+  &:hover {
+    background-color: $tertiary;
+    color: $secondary;
+  }
+}
+
+.nav-pills > li a.active {
+  background-color: $tertiary;
+  color: $secondary;
+  font-weight: 400;
+}
+
+// create topic
+button#create-topic {
+  background-color: $success;
+  color: $secondary;
+  border-radius: 4px;
+  .d-icon {
+    color: $secondary;
+  }
+  &:hover {
+    background-color: $success-medium;
+  }
+}
+
+// header icons 
+.d-header-icons {
+  .icon:hover {
+    background-color: $primary#{20};
+    border-radius: 4px;
+  }
+  .d-icon {
+    color: $primary;
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+
+.d-header-icons .icon:hover .d-icon, .d-header-icons .icon:focus .d-icon {
+  color: $primary;
+}
+
+// category box color
+.category-boxes .category-box-inner, .category-boxes-with-topics .category-box-inner {
+  border: 1px solid #44475a;
+}
+
+// input focus
+input[type="text"]:focus, input[type="password"]:focus,
+input[type="datetime"]:focus, input[type="datetime-local"]:focus,
+input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus,
+input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus,
+input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus,
+input[type="color"]:focus, textarea:focus {
+  box-shadow: none;
+}
+
+// select kit collection
+.select-kit-row .category-name, .select-kit-row .name {
+  color: $primary;
+  font-weight: 400;
+}
+.select-kit-row.is-highlighted[title="no tags"] span.name {
+  color: $tertiary;
+  font-weight: 600;
+}
+
+// post notice 
+.post-notice {
+  background-color: $secondary-high#{50};
+  border: 1px solid $highlight-high#{50};
+}
+
+// user name on posts
+.topic-meta-data {
+  .names .username a {
+    color: $success;
+  }
+}
+

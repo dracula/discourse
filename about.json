@@ -1,0 +1,19 @@
+{
+    "name": "Dracula Theme",
+    "about_url": "",
+    "liscense_url": "",
+    "color_schemes": {
+        "Dracula": {
+          "primary": "f2f2f2",
+          "secondary": "282a36",
+          "tertiary": "bd93f9",
+          "quaternary": "97e1f1",
+          "header_background": "ffffff",
+          "header_primary": "14151f",
+          "highlight": "f286c4",
+          "danger": "f56f6b",
+          "success": "62e884",
+          "love": "ff0077"
+        }
+    }
+}
