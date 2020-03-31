@@ -15,7 +15,16 @@ a {
 
 html {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 16px;
+  font-size: 17px;
+  &.text-size-smaller {
+    font-size: 16px;
+  }
+  &.text-size-larger {
+    font-size: 18px;
+  }
+  &.text-size-largest {
+    font-size: 20px;
+  }
 }
 
 tbody {
@@ -129,8 +138,11 @@ tbody {
 }
 
 // notifications
-.d-header-icons .unread-notifications {
+.d-header .unread-notifications {
   background-color: $success;
+}
+.unread-private-messages {
+  background-color: $love;
 }
 
 // Last visit line + text
