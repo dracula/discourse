@@ -4,7 +4,9 @@
 <img src="./discourse-dracula.png" width=500/>
 
 ## Install
-All instructions can be found at ...
+All instructions can be found [here](https://meta.discourse.org/t/dracula-a-dark-theme-for-discourse/146350)
+
+_If you'd like to use your own logo, replace the white discourse logos in the `/assets` folder with your own._
 
 ## Team
 
