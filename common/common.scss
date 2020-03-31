@@ -244,7 +244,7 @@ input[type="color"]:focus, textarea:focus {
 // post notice 
 .post-notice {
   background-color: $secondary-high#{50};
-  border: 1px solid $highlight-high#{50};
+  border: 1px solid $love#{50};
 }
 
 // user name on posts
@@ -294,4 +294,17 @@ input[type="color"]:focus, textarea:focus {
     background-color: rgba($love,.4);
     border-color: rgba($love,.5);
   }
+}
+
+// select kit is selected
+.select-kit .select-kit-row.is-selected, .select-kit .select-kit-row.is-selected.is-highlighted {
+  background-color: $tertiary#{70} !important;
+}
+.select-kit .select-kit-row.is-highlighted {
+  background-color: $tertiary#{40} !important;
+} 
+
+// composer popup
+.composer-popup {
+  background: rgb(77,69,104);
 }
