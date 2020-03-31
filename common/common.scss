@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap');
+@import "fonts";
 
 a {
   color: $quaternary;
@@ -11,10 +10,10 @@ html {
 
 tbody {
   border-top: 3px solid #44475a;
-}
-
-tr {
-  border-bottom: 1px solid #44475a;
+  tr.topic-list-item {
+    border-bottom: 1px solid #44475a;
+    background-color: #282a36;
+  }
 }
 
 .alert.alert-info {
@@ -100,6 +99,12 @@ tr {
   }
 }
 
+.quick-access-panel:hover {
+  .d-icon {
+    color: $primary !important;
+  }
+}
+
 // menu panel hover
 .menu-panel li a.widget-link:hover,
 .menu-panel li a.widget-link:focus,
@@ -126,6 +131,16 @@ tr {
   }
 }
 
+// title when injected on top of topics
+.extra-info-wrapper {
+  .topic-link {
+    color: $primary;
+  }
+  .categories-wrapper .badge-wrapper .badge-category {
+    color: $primary#{90} !important;
+  }
+}
+
 // visited topics
 .topic-list-item.visited a.title:not(.badge-notification),
 .latest-topic-list-item.visited a.title:not(.badge-notification),
@@ -134,21 +149,30 @@ tr {
   font-weight: 400;
 }
 
-// Navigation Pills
-.nav-pills > li > a {
+// not visited topics
+tr:not(.visited) .link-top-line .title {
   color: $primary;
-  font-family: 'Source Sans Pro' sans-serif;
-  font-weight: 300;
+  font-weight: 400;
+}
+
+td .link-bottom-line .badge-category {
+  font-weight: 400;
+}
+
+// Navigation Pills
+.nav-pills:not(#global-sidebar-nav) > li > a {
+  color: $primary;
+  font-family: "Source Sans Pro" sans-serif;
+  border-radius: 4px;
+  &.active {
+    background-color: $tertiary;
+    color: $secondary;
+    font-weight: 600;
+  }
   &:hover {
     background-color: $tertiary;
     color: $secondary;
   }
-}
-
-.nav-pills > li a.active {
-  background-color: $tertiary;
-  color: $secondary;
-  font-weight: 400;
 }
 
 // create topic
@@ -220,3 +244,26 @@ input[type="color"]:focus, textarea:focus {
   }
 }
 
+// custom side bar styles
+.custom-nav-list {
+  li:hover, h3 a:hover{
+    background-color: $tertiary#{50} !important;
+  }
+}
+
+#global-sidebar-nav > li > a:hover {
+  background-color: transparent;
+}
+
+.custom-nav-list h3 {
+  border-color: #44475a;
+}
+
+// avatar white background
+.avatar {
+  background-color: $primary;
+}
+
+.unread {
+  background-color: $success;
+}
