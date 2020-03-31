@@ -1,5 +1,14 @@
 @import "fonts";
 
+@keyframes background-fade-highlight {
+  0% {
+    background-color: $love#{30}; //new color!
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
 a {
   color: $quaternary;
 }
@@ -267,4 +276,22 @@ input[type="color"]:focus, textarea:focus {
 
 .unread {
   background-color: $success;
+}
+
+// topic progress
+.timeline-container .topic-timeline .timeline-scrollarea {
+  border-color: rgba($love,.9);
+  .timeline-handle {
+    background-color: rgba($love,.9);
+  }
+}
+
+#topic-progress {
+  color: rgba($love,.9);
+  background-color: $secondary;
+  border-color: rgba($love,.5);
+  .bg {
+    background-color: rgba($love,.4);
+    border-color: rgba($love,.5);
+  }
 }
