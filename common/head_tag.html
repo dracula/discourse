@@ -1,0 +1,22 @@
+<script type="text/discourse-plugin" version="0.8.25">
+  api.reopenWidget("home-logo", {
+    logoUrl() {
+      return (
+        settings.theme_uploads["discourse-white-logo"] || ""
+      );
+      
+    },
+
+    mobileLogoUrl() {
+      return (
+        settings.Alternative_mobile_logo_url || ""
+      );
+    },
+
+    smallLogoUrl() {
+      return (
+        settings.theme_uploads["discourse-white-logo-sm"] || ""
+      );
+    }
+  });
+</script>

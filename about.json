@@ -3,6 +3,8 @@
     "about_url": "",
     "liscense_url": "",
     "assets": {
+      "discourse-white-logo": "/assets/discourse-white.png",
+      "discourse-white-logo-sm": "/assets/discourse-white-small.png",
       "ssp-regular":"assets/SourceSansPro-Regular.ttf",
       "ssp-italic":"assets/SourceSansPro-Italic.ttf",
       "ssp-light":"assets/SourceSansPro-Light.ttf",

@@ -6,6 +6,7 @@ a {
 
 html {
   font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
 }
 
 tbody {
@@ -18,7 +19,7 @@ tbody {
 
 .alert.alert-info {
   background-color: $secondary-high#{50};
-  border: 1px solid $highlight-high#{50};
+  border: 1px solid $love#{50};
   a {
     color: $quaternary;
     font-family: 'Source Code Pro';
