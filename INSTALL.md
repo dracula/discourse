@@ -2,10 +2,10 @@ A theme built on the [Dracula color palette](https://draculatheme.com/contribute
 
 I felt like Discourse could use it as well :smile: 
 
-![image|690x456](upload://rXGpPBEPHGpWzfiwnLhkfGON7hJ.png)
+<img src="./screenshot.png" width=500/>
 
 Github Repo `https://github.com/jordanvidrine/discourse-dracula-theme`
  
-Preview on Theme Creator](https://theme-creator.discourse.org/theme/jordan.vidrine/dracula)
+[Preview on Theme Creator](https://theme-creator.discourse.org/theme/jordan.vidrine/dracula)
 
 [How do I install a theme or theme component?](https://meta.discourse.org/t/how-do-i-install-a-theme-or-theme-component/63682)
