@@ -1,14 +1,16 @@
 # Dracula for [Discourse](https://www.discourse.org/)
+
 > A dark theme for [Discourse](https://www.discourse.org/)
 
-<img src="./screenshot.png" width=500/>
+![Screenshot](./screenshot.png)
 
 ## Install
-All instructions can be found [here](https://meta.discourse.org/t/dracula-a-dark-theme-for-discourse/146350)
+
+All instructions can be found at [draculatheme.com/discourse](https://draculatheme.com/discourse).
 
 ## Team
 
-This theme is maintained by the following person(s) and [these awesome contributors](https://github.com/jordanvidrine/discourse-dracula-theme/graphs/contributors)
+This theme is maintained by the following person(s) and [these awesome contributors](https://github.com/dracula/discourse/graphs/contributors)
 
 [![Jordan Vidrine](https://avatars0.githubusercontent.com/u/30537603?v=4&s=100)](https://github.com/jordanvidrine) |
 --- |
