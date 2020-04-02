@@ -6,6 +6,6 @@ I felt like Discourse could use it as well :smile:
 
 Github Repo `https://github.com/jordanvidrine/discourse-dracula-theme`
  
-[Preview on Theme Creator](https://theme-creator.discourse.org/theme/jordan.vidrine/dracula)
+:dark_sunglasses: [Preview on Theme Creator](https://theme-creator.discourse.org/theme/jordan.vidrine/dracula)
 
-[How do I install a theme or theme component?](https://meta.discourse.org/t/how-do-i-install-a-theme-or-theme-component/63682)
+:hammer_and_wrench: [How do I install a theme or theme component?](https://meta.discourse.org/t/how-do-i-install-a-theme-or-theme-component/63682)
