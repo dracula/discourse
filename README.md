@@ -1,7 +1,7 @@
 # Dracula for [Discourse](https://www.discourse.org/)
 > A dark theme for [Discourse](https://www.discourse.org/)
 
-<img src="./discourse-dracula.png" width=500/>
+<img src="./screenshot.png" width=500/>
 
 ## Install
 All instructions can be found [here](https://meta.discourse.org/t/dracula-a-dark-theme-for-discourse/146350)
