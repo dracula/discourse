@@ -17,16 +17,16 @@
     },
     "color_schemes": {
       "Dracula": {
-        "primary": "f2f2f2",
-        "secondary": "282a36",
-        "tertiary": "bd93f9",
-        "quaternary": "8be9fd",
-        "header_background": "ffffff",
-        "header_primary": "14151f",
-        "highlight": "f1fa8c",
-        "danger": "ff5555",
-        "success": "50fa7b",
-        "love": "ff79c6"
+        "primary": "ffffff",
+        "secondary": "ffffff",
+        "tertiary": "ffffff",
+        "quaternary": "ffffff",
+        "header_background": "000000",
+        "header_primary": "000000",
+        "highlight": "000000",
+        "danger": "000000",
+        "success": "000000",
+        "love": "ffffff"
       }
   }
 }
