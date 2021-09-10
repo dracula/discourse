@@ -282,6 +282,10 @@ img.avatar {
   background-color: $primary;
 }
 
+.directory .me {
+  background-color: var(--tertiary-medium);
+}
+
 .unread {
   background-color: $success;
 }
