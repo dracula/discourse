@@ -177,20 +177,20 @@ td .link-bottom-line .badge-category {
   font-weight: 400;
 }
 
-// Navigation Pills
-.nav-pills:not(#global-sidebar-nav) > li > a {
-  color: $primary;
-  font-family: "Source Sans Pro" sans-serif;
-  border-radius: 4px;
-  &.active {
-    background-color: $tertiary;
-    color: $secondary;
-    font-weight: 600;
-  }
-  &:hover {
-    background-color: $tertiary;
-    color: $secondary;
-  }
+.new-user-wrapper .user-navigation .nav-pills li a.active {
+  color: #8be9fd;
+  border-color: #8be9fd;
+}
+
+.new-user-wrapper .user-navigation .nav-pills li a:hover, .new-user-wrapper .user-navigation .nav-pills li a:focus {
+  color: var(--tertiary);
+  border-color: var(--tertiary);
+}
+
+.nav-pills>li a.active, .nav-pills>li button.active,
+.nav-pills>li>a:hover, .nav-pills>li button:hover {
+  background: var(--tertiary);
+  color: var(--secondary);
 }
 
 // create topic
@@ -265,7 +265,7 @@ input[type="color"]:focus, textarea:focus {
 // custom side bar styles
 .custom-nav-list {
   li:hover, h3 a:hover{
-    background-color: $tertiary#{50} !important;
+    background-color: var(--tertiary-500) !important;
   }
 }
 
@@ -279,15 +279,11 @@ input[type="color"]:focus, textarea:focus {
 
 // avatar white background
 img.avatar {
-  background-color: $primary;
+  background-color: var(--primary);
 }
 
 .directory .me {
   background-color: var(--tertiary-medium);
-}
-
-.unread {
-  background-color: $success;
 }
 
 // topic progress
