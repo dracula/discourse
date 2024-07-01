@@ -177,22 +177,6 @@ td .link-bottom-line .badge-category {
   font-weight: 400;
 }
 
-.new-user-wrapper .user-navigation .nav-pills li a.active {
-  color: #8be9fd;
-  border-color: #8be9fd;
-}
-
-.new-user-wrapper .user-navigation .nav-pills li a:hover, .new-user-wrapper .user-navigation .nav-pills li a:focus {
-  color: var(--tertiary);
-  border-color: var(--tertiary);
-}
-
-.nav-pills>li a.active, .nav-pills>li button.active,
-.nav-pills>li>a:hover, .nav-pills>li button:hover {
-  background: var(--tertiary);
-  color: var(--secondary);
-}
-
 // create topic
 button#create-topic {
   background-color: $success;
