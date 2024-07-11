@@ -1,16 +1,21 @@
-@import "fonts";
+:root {
+  --d-sidebar-highlight-color: var(--primary);
+  --primary-700: var(--primary-high);
+  --primary-500: var(--primary-high);
+  --primary-400: var(--primary-medium);
+  --primary-300: var(--primary-medium);
+  --highlight-bg: var(--d-hover);
+}
+
+@import 'fonts';
 
 @keyframes background-fade-highlight {
   0% {
-    background-color: $love#{30}; //new color!
+    background-color: var(--d-hover);
   }
   100% {
     background-color: transparent;
   }
-}
-
-a {
-  color: $quaternary;
 }
 
 html {
@@ -27,149 +32,99 @@ html {
   }
 }
 
+textarea,
+input {
+  &::placeholder {
+    color: var(--secondary-medium);
+  }
+}
+
 tbody {
-  border-top: 3px solid #44475a;
+  border-top: 3px solid var(--secondary-high);
   tr.topic-list-item {
-    border-bottom: 1px solid #44475a;
-    background-color: #282a36;
+    border-bottom: 1px solid var(--secondary-high);
+    background-color: var(--secondary);
   }
 }
 
 .alert.alert-info {
-  background-color: $secondary-very-high;
-  border: 1px solid $love#{50};
-  a {
-    color: $quaternary;
-    font-family: 'Source Code Pro';
-    font-size: 13px;
-    &:hover {
-      color: $quaternary#{90};
-    }
-  }
+  background-color: var(--secondary-high);
 }
 
 .topic-list td {
-  color: $primary;
+  color: var(--primary);
 }
 
 // Header
 .d-header {
-  background-color: $secondary;
-  box-shadow: 0 5px 10px 0 rgba(0,0,0,.15);
+  box-shadow: none;
+  border-bottom: 1px solid var(--secondary-high);
   height: 75px;
 }
 
 // Menu Panel Links
 .panel-body-contents {
   a {
-    color: $primary;
-    text-decoration: underline;
-    text-decoration-color: transparent;
-    &:hover {
-      color: $tertiary;
-      text-decoration-color: $tertiary;
-    }
+    color: var(--primary);
   }
   .badge-wrapper.bullet span.badge-category {
-    color: $primary;
+    color: var(--primary);
     font-weight: 400;
-  }
-}
-
-// User menu panel links + icons
-.user-menu {
-  .menu-links-header {
-    .menu-links-row {
-      border-color: #44475a;
-      li a.active {
-        border-color: #44475a;
-      }
-    }
-    a {
-      color: $primary;
-      text-decoration: underline;
-      text-decoration-color: transparent;
-      &:hover {
-      color: $tertiary;
-      text-decoration-color: $tertiary;
-      background-color: transparent;
-      }
-    }
-    .user .d-icon, .glyphs .d-icon {
-      color: $primary;
-    }
   }
 }
 
 .user-menu .quick-access-panel li {
   .d-icon {
-    color: $primary;
-  };
-  background-color: $tertiary#{50};
-  &:not(.read):hover {
-    background-color: $tertiary#{50};
-  }
-  &:hover {
-    background-color: transparent;
+    color: var(--primary);
   }
 }
 
-.quick-access-panel:hover {
+.user-menu .quick-access-panel .d-icon,
+.user-menu .quick-access-panel:hover .d-icon,
+.user-notifications-list .d-icon,
+.user-notifications-list:hover .d-icon {
+  color: currentColor;
+}
+
+.user-menu.revamped .tabs-list .btn.active {
+  background: var(--tertiary);
+  color: var(--primary);
   .d-icon {
-    color: $primary !important;
+    color: var(--primary);
   }
-}
-
-// menu panel hover
-.menu-panel li a.widget-link:hover,
-.menu-panel li a.widget-link:focus,
-.menu-panel li.heading a.widget-link:hover,
-.menu-panel li.heading a.widget-link:focus {
-  background-color: transparent;
-}
-
-// select kit highlight
-.select-kit .select-kit-row.is-highlighted {
-  background-color: $highlight-high#{50};
+  .badge-notification {
+    background: var(--primary);
+  }
 }
 
 // notifications
 .d-header .unread-notifications {
-  background-color: $success;
+  background-color: var(--success);
 }
 .unread-private-messages {
-  background-color: $love;
+  background-color: var(--love);
 }
 
 // Last visit line + text
 .topic-list .topic-list-item-separator td {
   border-bottom: 1px solid $highlight-high#{90};
   span {
-    color: $highlight-high;
+    color: var(--highlight-high);
   }
 }
 
 // title when injected on top of topics
 .extra-info-wrapper {
   .topic-link {
-    color: $primary;
+    color: var(--primary);
   }
   .categories-wrapper .badge-wrapper .badge-category {
-    color: $primary#{90} !important;
+    color: var(--primary);
   }
-}
-
-// visited topics
-.topic-list-item.visited a.title:not(.badge-notification),
-.latest-topic-list-item.visited a.title:not(.badge-notification),
-.category-topic-link.visited a.title:not(.badge-notification) {
-  color: $primary-high;
-  font-weight: 400;
 }
 
 // not visited topics
 tr:not(.visited) .link-top-line .title {
-  color: $primary;
   font-weight: 600;
 }
 
@@ -178,103 +133,90 @@ td .link-bottom-line .badge-category {
 }
 
 .new-user-wrapper .user-navigation .nav-pills li a.active {
-  color: #8be9fd;
-  border-color: #8be9fd;
+  color: var(--quaternary);
+  border-color: var(--quaternary);
 }
 
-.new-user-wrapper .user-navigation .nav-pills li a:hover, .new-user-wrapper .user-navigation .nav-pills li a:focus {
+.new-user-wrapper .user-navigation .nav-pills li a:hover,
+.new-user-wrapper .user-navigation .nav-pills li a:focus {
   color: var(--tertiary);
   border-color: var(--tertiary);
 }
 
-.nav-pills>li a.active, .nav-pills>li button.active,
-.nav-pills>li>a:hover, .nav-pills>li button:hover {
+.nav-pills > li a.active,
+.nav-pills > li button.active,
+.nav-pills > li > a:hover,
+.nav-pills > li button:hover {
   background: var(--tertiary);
   color: var(--secondary);
 }
 
 // create topic
 button#create-topic {
-  background-color: $success;
-  color: $secondary;
+  background-color: var(--success);
+  color: var(--secondary);
   border-radius: 4px;
   .d-icon {
-    color: $secondary;
+    color: var(--secondary);
   }
   &:hover {
-    background-color: $success-medium;
+    background-color: var(--success-medium);
   }
 }
 
-// header icons 
+// header icons
+.header-sidebar-toggle,
 .d-header-icons {
-  .icon:hover {
-    background-color: $primary#{20};
-    border-radius: 4px;
-  }
-  .d-icon {
-    color: $primary;
-    &:hover {
-      color: $primary;
+  a,
+  button {
+    .d-icon {
+      color: var(--primary);
     }
   }
 }
 
-.d-header-icons .icon:hover .d-icon, .d-header-icons .icon:focus .d-icon {
-  color: $primary;
-}
-
 // category box color
-.category-boxes .category-box-inner, .category-boxes-with-topics .category-box-inner {
-  border: 1px solid #44475a;
-}
-
-// input focus
-input[type="text"]:focus, input[type="password"]:focus,
-input[type="datetime"]:focus, input[type="datetime-local"]:focus,
-input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus,
-input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus,
-input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus,
-input[type="color"]:focus, textarea:focus {
-  box-shadow: none;
+.category-boxes .category-box-inner,
+.category-boxes-with-topics .category-box-inner {
+  border: 1px solid var(--secondary-high);
 }
 
 // select kit collection
-.select-kit-row .category-name, .select-kit-row .name {
-  color: $primary;
-  font-weight: 400;
+.select-kit-row .category-name,
+.select-kit-row .name {
+  color: var(--primary);
 }
-.select-kit-row.is-highlighted[title="no tags"] span.name {
-  color: $tertiary;
-  font-weight: 600;
+.select-kit-row.is-highlighted[title='no tags'] span.name {
+  color: var(--tertiary);
 }
 
-// post notice 
+// post notice
 .post-notice {
-  background-color: $secondary-high#{50};
-  border: 1px solid $love#{50};
+  background-color: var(--secondary-high);
 }
 
-// user name on posts
+// user name on posts and chat
+
 .topic-meta-data {
   .names .username a {
-    color: $success;
+    color: var(--success);
   }
+}
+
+.chat-message-info__username__name {
+  color: var(--success);
 }
 
 // custom side bar styles
 .custom-nav-list {
-  li:hover, h3 a:hover{
+  li:hover,
+  h3 a:hover {
     background-color: var(--tertiary-500) !important;
   }
 }
 
-#global-sidebar-nav > li > a:hover {
-  background-color: transparent;
-}
-
 .custom-nav-list h3 {
-  border-color: #44475a;
+  border-color: var(--secondary-high);
 }
 
 // avatar white background
@@ -288,31 +230,94 @@ img.avatar {
 
 // topic progress
 .timeline-container .topic-timeline .timeline-scrollarea {
-  border-color: rgba($love,.9);
+  border-color: var(--love);
   .timeline-handle {
-    background-color: rgba($love,.9);
+    background-color: var(--love);
   }
 }
 
 #topic-progress {
-  color: rgba($love,.9);
-  background-color: $secondary;
-  border-color: rgba($love,.5);
+  color: var(--love-low);
+  background-color: var(--secondary);
+  border-color: var(--love);
   .bg {
-    background-color: rgba($love,.4);
-    border-color: rgba($love,.5);
+    background-color: var(--love);
+    border-color: var(--love);
   }
 }
 
-// select kit is selected
-.select-kit .select-kit-row.is-selected, .select-kit .select-kit-row.is-selected.is-highlighted {
-  background-color: $tertiary#{70} !important;
-}
-.select-kit .select-kit-row.is-highlighted {
-  background-color: $tertiary#{40} !important;
-} 
-
 // composer popup
 .composer-popup {
-  background: rgb(77,69,104);
+  background: var(--secondary-high);
+}
+
+// /top
+
+.select-kit.dropdown-select-box.period-chooser
+  .period-chooser-row
+  .top-date-string,
+.select-kit.dropdown-select-box.period-chooser
+  .period-chooser-header
+  h2.selected-name
+  .top-date-string {
+  color: var(--quaternary);
+}
+
+// posts
+
+.read-state {
+  color: var(--quaternary);
+}
+
+blockquote,
+aside.quote .title {
+  background: var(--primary-low);
+  border-color: var(--primary-medium);
+}
+
+nav.post-controls .actions button.create,
+nav.post-controls .actions a,
+nav.post-controls .actions button {
+  color: var(--primary-medium);
+  .d-icon {
+    color: currentColor;
+  }
+  &.d-hover {
+    color: var(--primary);
+  }
+}
+
+.discourse-no-touch .topic-body .actions .fade-out {
+  opacity: 1;
+}
+
+pre code {
+  background: var(--secondary-high);
+}
+
+// chat
+
+.no-touch {
+  .chat-message-container:hover,
+  .chat-transcript:hover,
+  .chat-message-container.-active,
+  .-active.chat-transcript {
+    pre code {
+      background: var(--secondary);
+    }
+  }
+}
+
+.chat-transcript {
+  border: 1px solid var(--primary-low);
+  background: var(--secondary);
+  .discourse-no-touch & {
+    &:hover {
+      background: inherit;
+
+      pre code {
+        background: rgba(var(--primary-rgb), 0.05);
+      }
+    }
+  }
 }

@@ -1,32 +1,42 @@
 {
-    "name": "Dracula Theme",
-    "about_url": "",
-    "liscense_url": "",
-    "assets": {
-      "ssp-regular":"assets/SourceSansPro-Regular.ttf",
-      "ssp-italic":"assets/SourceSansPro-Italic.ttf",
-      "ssp-light":"assets/SourceSansPro-Light.ttf",
-      "ssp-light-italic":"assets/SourceSansPro-LightItalic.ttf",
-      "ssp-semibold":"assets/SourceSansPro-SemiBold.ttf",
-      "ssp-semibold-italic":"assets/SourceSansPro-SemiBoldItalic.ttf",
-      "ssp-bold":"assets/SourceSansPro-Bold.ttf",
-      "ssp-bold-italic":"assets/SourceSansPro-BoldItalic.ttf",
-      "ssp-black":"assets/SourceSansPro-Black.ttf",
-      "ssp-black-italic":"assets/SourceSansPro-BlackItalic.ttf",
-      "scp-regular":"assets/SourceCodePro-Regular.ttf"
-    },
-    "color_schemes": {
-      "Dracula": {
-        "primary": "f2f2f2",
-        "secondary": "282a36",
-        "tertiary": "bd93f9",
-        "quaternary": "8be9fd",
-        "header_background": "ffffff",
-        "header_primary": "14151f",
-        "highlight": "f1fa8c",
-        "danger": "ff5555",
-        "success": "50fa7b",
-        "love": "ff79c6"
-      }
+  "name": "Dracula Theme",
+  "about_url": "",
+  "liscense_url": "",
+  "assets": {
+    "ssp-regular": "assets/SourceSansPro-Regular.ttf",
+    "ssp-italic": "assets/SourceSansPro-Italic.ttf",
+    "ssp-light": "assets/SourceSansPro-Light.ttf",
+    "ssp-light-italic": "assets/SourceSansPro-LightItalic.ttf",
+    "ssp-semibold": "assets/SourceSansPro-SemiBold.ttf",
+    "ssp-semibold-italic": "assets/SourceSansPro-SemiBoldItalic.ttf",
+    "ssp-bold": "assets/SourceSansPro-Bold.ttf",
+    "ssp-bold-italic": "assets/SourceSansPro-BoldItalic.ttf",
+    "ssp-black": "assets/SourceSansPro-Black.ttf",
+    "ssp-black-italic": "assets/SourceSansPro-BlackItalic.ttf",
+    "scp-regular": "assets/SourceCodePro-Regular.ttf"
+  },
+  "color_schemes": {
+    "Dracula": {
+      "primary": "f2f2f2",
+      "primary-high": "9da0b5",
+      "primary-medium": "727694",
+      "primary-low-mid": "727694",
+      "primary-low": "44475A",
+      "primary-very-low": "44475A",
+      "secondary": "282a36",
+      "secondary-high": "44475A",
+      "tertiary": "bd93f9",
+      "tertiary-low": "44475A",
+      "tertiary-very-low": "44475A",
+      "quaternary": "8be9fd",
+      "header_background": "282a36",
+      "header_primary": "f2f2f2",
+      "highlight": "f1fa8c",
+      "danger": "ff5555",
+      "success": "50fa7b",
+      "love": "ff79c6",
+      "hover": "44475A",
+      "selected": "44475A"
+    }
   }
 }
